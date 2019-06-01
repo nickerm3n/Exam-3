@@ -50,22 +50,27 @@
 				font-style: italic;
 				display: inline-block;
 				cursor:pointer;
-				transition: all .5s linear;
+				transition: all .3s linear;
+				
+				&:hover {
+					background: $violet;
+					color: #fff;
+				}
 				
 				
 
-				&::after {
-					content: '';
-					@include pos($t:0, $r:0, $b:0, $l:0, $z:-1);
-					background: rgba(0, 0, 0, .5);
-					transform: scale(0);
-					pointer-events:none;
+				// &::before {
+				// 	content: '';
+				// 	@include pos($t:0, $r:0, $b:0, $l:0, $z:-1);
+				// 	background: rgba(0, 0, 0, .5);
+				// 	transform: scale(0);
+				// 	pointer-events:none;
 				
-				}
+				// }
 
-				&:hover::after {
-					transform: scale(1);
-				}
+				// &:hover::before {
+				// 	transform: scale(1);
+				// }
 
 
 
