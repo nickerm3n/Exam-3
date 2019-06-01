@@ -1,0 +1,33 @@
+.tile {
+	padding: 95px 0 149px;
+	color: $grey;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-family: $pt;
+	
+	&__title {
+		margin-top: 22px;
+		color: $darkgrey;
+		font-size: 24px;
+		font-weight: 700;
+		
+		
+	}
+
+	&__info {
+		padding-top: 5px;
+	}
+	
+	&__subtitle {
+		margin-top: 18px;
+		width: 61%;
+		font-style: italic;
+	}
+}
+
+.tile.grey {
+	background: $lightgrey;
+}

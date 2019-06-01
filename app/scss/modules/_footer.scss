@@ -1,0 +1,18 @@
+.footer {
+	padding: 75px 0;
+	background: $violet;
+	
+	&__info {
+		color: #fff;
+		font-family: $pt;
+	}
+
+	&__social {
+		display: flex;
+		justify-content: space-between;
+		
+		li {
+			
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.container-header {
+	height: 100vh;
+	background: rgba(159, 154, 207, .6) url('../images/header-bg-mobile.jpg') top center;
+	background-size: cover;
+	background-blend-mode: screen;
+	background-attachment: fixed;
+	
+	@media (min-width: $width-md) {
+		background-image: url('../images/header-bg.jpg');
+	}
+}
+
+.header {
+	padding-top: 50px;
+}
+
+.main-text {
+	color: #fff;
+	text-align: center;
+	margin-top: 200px;
+	
+	h1 {
+		text-transform: uppercase;
+		font-size: 2rem;
+		
+		@media (min-width: $width-md) {
+			font-size: 4.5rem;
+		}
+	}
+
+	p {
+		margin-top: 35px;
+		font-family: $pt;
+		font-style: italic;
+		font-size: 1rem;
+		font-weight: 300;
+		
+		@media (min-width: $width-md) {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	
+	@media (min-width: $width-md) {
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+
+	
+	&__link {
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.5rem;
+		
+		&:hover {
+			color: grey;
+			text-decoration: none;
+		}
+
+	}
+
+	&__item {
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 10px;
+	}
+}
+
+//
+
+// background: linear-gradient(180deg,#ebebeb 35%,#ebebeb 0,#fff 36%,#fff);
